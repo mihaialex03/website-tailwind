@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Header from './components/Header';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+const App = () => {
+    return (
+        <div>
+            <Header/>
+            {/* Other sections/components of your one-page website */}
+            <section id="home" className="h-screen bg-gray-100">Home Section</section>
+            <section id="about" className="h-screen bg-gray-200">About Section</section>
+            <section id="programs" className="h-screen bg-gray-300">Programs Section</section>
+            <section id="cart" className="h-screen bg-gray-400">Cart Section</section>
+            {/* You can add more sections as needed */}
+        </div>
+    );
 }
 
 export default App;
