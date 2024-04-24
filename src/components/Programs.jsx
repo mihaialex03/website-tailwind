@@ -10,7 +10,7 @@ const Programs = () => {
                     <div className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col justify-between">
                         <div className="p-6">
                             <h3 className="text-xl font-semibold mb-2">Program 1</h3>
-                            <p className="text-gray-700 mb-4">Subtitle with description of Program 1.</p>
+                            <p className="text-gray-700 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. A alias odit assumenda voluptatem tenetur deserunt.</p>
                         </div>
                         <div className="flex flex-col items-center p-6">
                             <p className="text-gray-700 mb-4">Price: XX$</p>
@@ -21,7 +21,7 @@ const Programs = () => {
                     <div className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col justify-between">
                         <div className="p-6">
                             <h3 className="text-xl font-semibold mb-2">Program 2</h3>
-                            <p className="text-gray-700 mb-4">Subtitle with description of Program 2.</p>
+                            <p className="text-gray-700 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit asperiores quis quaerat tempora velit nam.</p>
                         </div>
                         <div className="flex flex-col items-center p-6">
                             <p className="text-gray-700 mb-4">Price: XX$</p>
@@ -32,7 +32,7 @@ const Programs = () => {
                     <div className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col justify-between">
                         <div className="p-6">
                             <h3 className="text-xl font-semibold mb-2">Program 3</h3>
-                            <p className="text-gray-700 mb-4">Subtitle with description of Program 3.</p>
+                            <p className="text-gray-700 mb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae nobis optio, eligendi natus asperiores sunt!</p>
                         </div>
                         <div className="flex flex-col items-center p-6">
                             <p className="text-gray-700 mb-4">Price: $XX</p>
