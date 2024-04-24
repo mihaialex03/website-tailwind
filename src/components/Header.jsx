@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link as ScrollLink } from 'react-scroll';
+import { Link as ScrollLink} from 'react-scroll';
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -9,16 +9,23 @@ const Header = () => {
     };
 
     return (
-        <header className="bg-gray-900 text-white py-4 sticky top-0 z-10">
+        <header className="bg-gray-900 text-white py-4 sticky top-0 z-20 mx-auto">
             <div className="container mx-auto flex justify-between items-center">
-                {/* Logo (you can include your logo here if needed) */}
-                <div className="text-2xl font-bold mr-4 cursor-pointer">
-                    Logo
+                {/* Logo introdus aici */}
+                <div className="text-2xl font-bold mr-4 ml-4 cursor-pointer">
+                    <ScrollLink
+                        to="home"
+                        smooth={true}
+                        duration={500}
+                        className="cursor-pointer"
+                    >
+                        Coaching
+                    </ScrollLink>
                 </div>
 
                 {/* Burger Menu Icon (visible on mobile) */}
                 <button
-                    className="block lg:hidden text-white focus:outline-none"
+                    className="block lg:hidden text-white focus:outline-none m-4"
                     onClick={toggleMenu}
                 >
                     <svg
@@ -62,14 +69,7 @@ const Header = () => {
                     >
                         Programs
                     </ScrollLink>
-                    <ScrollLink
-                        to="cart"
-                        smooth={true}
-                        duration={500}
-                        className="mx-4 cursor-pointer"
-                    >
-                        Cart
-                    </ScrollLink>
+                    
                 </nav>
 
                 {/* Burger Menu (visible on mobile) */}
@@ -102,15 +102,7 @@ const Header = () => {
                         >
                             Programs
                         </ScrollLink>
-                        <ScrollLink
-                            to="cart"
-                            smooth={true}
-                            duration={500}
-                            className="block py-2 px-4 cursor-pointer"
-                            onClick={toggleMenu}
-                        >
-                            Cart
-                        </ScrollLink>
+                       
                     </div>
                 )}
             </div>
