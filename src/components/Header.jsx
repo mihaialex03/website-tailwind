@@ -9,14 +9,15 @@ const Header = () => {
     };
 
     return (
-        <header className="bg-gray-900 text-white py-4 sticky top-0 z-20 mx-auto">
+        <header className="bg-primary text-white py-4 sticky top-0 z-20 mx-auto">
             <div className="container mx-auto flex justify-between items-center">
                 {/* Logo introdus aici */}
-                <div className="text-2xl font-bold mr-4 ml-4 cursor-pointer">
+                <div className="text-2xl font-bold mr-4 ml-4 cursor-pointer text-accent">
                     <ScrollLink
                         to="home"
                         smooth={true}
                         duration={500}
+                        offset={-100}
                         className="cursor-pointer"
                     >
                         Coaching
@@ -25,7 +26,7 @@ const Header = () => {
 
                 {/* Burger Menu Icon (visible on mobile) */}
                 <button
-                    className="block lg:hidden text-white focus:outline-none m-4"
+                    className="block lg:hidden text-background focus:outline-none m-4"
                     onClick={toggleMenu}
                 >
                     <svg
@@ -49,7 +50,8 @@ const Header = () => {
                         to="home"
                         smooth={true}
                         duration={500}
-                        className="mx-4 cursor-pointer"
+                        offset={-100}
+                        className="mx-4 cursor-pointer text-secondary"
                     >
                         Home
                     </ScrollLink>
@@ -57,7 +59,8 @@ const Header = () => {
                         to="about"
                         smooth={true}
                         duration={500}
-                        className="mx-4 cursor-pointer"
+                        offset={-100}
+                        className="mx-4 cursor-pointer text-secondary"
                     >
                         About
                     </ScrollLink>
@@ -65,7 +68,8 @@ const Header = () => {
                         to="programs"
                         smooth={true}
                         duration={500}
-                        className="mx-4 cursor-pointer"
+                        offset={-100}
+                        className="mx-4 cursor-pointer text-secondary"
                     >
                         Programs
                     </ScrollLink>
@@ -73,7 +77,8 @@ const Header = () => {
                         to="contact"
                         smooth={true}
                         duration={500}
-                        className="mx-4 cursor-pointer"
+                        offset={-100}
+                        className="mx-4 cursor-pointer text-secondary"
                     >
                         Contact
                     </ScrollLink>
@@ -82,12 +87,13 @@ const Header = () => {
 
                 {/* Burger Menu (visible on mobile) */}
                 {isOpen && (
-                    <div className="lg:hidden absolute top-full left-0 right-0 bg-gray-900 text-white">
+                    <div className="lg:hidden absolute top-full left-0 right-0 bg-primary text-white">
                         <ScrollLink
                             to="home"
                             smooth={true}
                             duration={500}
-                            className="block py-2 px-4 cursor-pointer"
+                            offset={-100}
+                            className="block py-2 px-4 cursor-pointer text-secondary"
                             onClick={toggleMenu}
                         >
                             Home
@@ -96,7 +102,8 @@ const Header = () => {
                             to="about"
                             smooth={true}
                             duration={500}
-                            className="block py-2 px-4 cursor-pointer"
+                            offset={-100}
+                            className="block py-2 px-4 cursor-pointer text-secondary"
                             onClick={toggleMenu}
                         >
                             About
@@ -105,7 +112,8 @@ const Header = () => {
                             to="programs"
                             smooth={true}
                             duration={500}
-                            className="block py-2 px-4 cursor-pointer"
+                            offset={-100}
+                            className="block py-2 px-4 cursor-pointer text-secondary"
                             onClick={toggleMenu}
                         >
                             Programs
@@ -114,7 +122,8 @@ const Header = () => {
                             to="contact"
                             smooth={true}
                             duration={500}
-                            className="block py-2 px-4 cursor-pointer"
+                            offset={-100}
+                            className="block py-2 px-4 cursor-pointer text-secondary"
                             onClick={toggleMenu}
                         >
                             Contact
