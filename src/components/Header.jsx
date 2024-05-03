@@ -69,6 +69,14 @@ const Header = () => {
                     >
                         Programs
                     </ScrollLink>
+                    <ScrollLink
+                        to="contact"
+                        smooth={true}
+                        duration={500}
+                        className="mx-4 cursor-pointer"
+                    >
+                        Contact
+                    </ScrollLink>
                     
                 </nav>
 
@@ -101,6 +109,15 @@ const Header = () => {
                             onClick={toggleMenu}
                         >
                             Programs
+                        </ScrollLink>
+                        <ScrollLink
+                            to="contact"
+                            smooth={true}
+                            duration={500}
+                            className="block py-2 px-4 cursor-pointer"
+                            onClick={toggleMenu}
+                        >
+                            Contact
                         </ScrollLink>
                        
                     </div>
