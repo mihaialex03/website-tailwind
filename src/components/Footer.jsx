@@ -11,7 +11,7 @@ const Footer = () => {
         </div>
 
         {/* Support Tab */}
-        <div className="text-lg cursor-pointer mb-2 lg:mx-auto">
+        <div className="text-lg mb-2 lg:mx-auto">
           <span>
             &copy; {new Date().getFullYear()} Coaching. <p className="text-xs text-center">All rights reserved.</p>
           </span>
