@@ -16,40 +16,42 @@ const Cart = () => {
   return (
     <>
       {cartItems.length > 0 && (
-        <div className="container mx-auto py-12">
-          <h2 className="text-4xl font-bold mb-8 text-center text-primary">
-            Shopping Cart
-          </h2>
-          <ul>
-            {cartItems.map((item) => (
-              <li
-                key={item.id}
-                className="bg-secondary shadow-lg rounded-lg overflow-hidden flex justify-between items-center mx-4 my-2 px-6 py-4"
-              >
-                <div>
-                  <p className="text-xl font-semibold mb-2 text-background">
-                    {item.name}
-                  </p>
-                  <p className="text-background">Price: {item.price}$</p>
-                </div>
-                <button
-                  onClick={() => handleRemoveFromCart(item.id)}
-                  className="bg-accent  text-background py-2 px-4 rounded-lg"
+        <section id="Cart">
+          <div className="container mx-auto py-12">
+            <h2 className="text-4xl font-bold mb-8 text-center text-primary">
+              Shopping Cart
+            </h2>
+            <ul>
+              {cartItems.map((item) => (
+                <li
+                  key={item.id}
+                  className="bg-secondary shadow-lg rounded-lg overflow-hidden flex justify-between items-center mx-4 my-2 px-6 py-4"
                 >
-                  Remove
-                </button>
-              </li>
-            ))}
-          </ul>
-          <div className="text-center mt-8">
-            <p className="text-xl text-primary">
-              Total amount: ${totalAmount}
-            </p>
-            <p className="text-xl text-primary">
-              Number of items: {cartItems.length}
-            </p>
+                  <div>
+                    <p className="text-xl font-semibold mb-2 text-background">
+                      {item.name}
+                    </p>
+                    <p className="text-background">Price: {item.price}$</p>
+                  </div>
+                  <button
+                    onClick={() => handleRemoveFromCart(item.id)}
+                    className="bg-accent  text-background py-2 px-4 rounded-lg"
+                  >
+                    Remove
+                  </button>
+                </li>
+              ))}
+            </ul>
+            <div className="text-center mt-8">
+              <p className="text-xl text-primary">
+                Total amount: ${totalAmount}
+              </p>
+              <p className="text-xl text-primary">
+                Number of items: {cartItems.length}
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
       )}
     </>
   );
