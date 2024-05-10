@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
         {/* Logo */}
         <div className="text-2xl font-bold text-center lg:text-left mb-2 lg:mb-0 text-accent">
-          <span>Logo</span>
+          <span>Coaching</span>
         </div>
 
         {/* Support Tab */}

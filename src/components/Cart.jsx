@@ -2,15 +2,16 @@ import React from "react";
 import useCartStore from "../store/useCartStore";
 
 const Cart = () => {
+  // using useCartStore Hook
   const { cartItems, removeFromCart } = useCartStore((state) => ({
     cartItems: state.cartItems,
     removeFromCart: state.removeFromCart,
   }));
-
+  // Deleting items from the Cart
   const handleRemoveFromCart = (itemId) => {
     removeFromCart(itemId);
   };
-
+  // calculate total amount
   const totalAmount = cartItems.reduce((total, item) => total + item.price, 0);
 
   return (

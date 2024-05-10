@@ -19,17 +19,14 @@ const Home = () => {
 
         {/* Content */}
         <div className="relative z-10 text-center">
-          {/* Title */}
           <h1 className="text-4xl md:text-6xl font-bold mb-4">
             Welcome to <p className="text-accent">Coaching</p>
           </h1>
 
-          {/* Subtitle */}
           <p className="text-lg md:text-xl mb-8">
             Get in shape, stay healthy, and achieve your fitness goals with me.
           </p>
 
-          {/* Button (Placeholder) */}
           <ScrollLink
             to="contact"
             spy={true}

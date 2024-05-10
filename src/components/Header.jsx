@@ -67,7 +67,7 @@ const Header = () => {
           </button>
         </div>
 
-        {/* Navigation Links (visible on desktop) */}
+        {/* Navigation Links (desktop) */}
         <nav className="hidden lg:flex justify-center">
           <ScrollLink
             to="home"
@@ -107,7 +107,7 @@ const Header = () => {
           </ScrollLink>
         </nav>
 
-        {/* Burger Menu (visible on mobile) */}
+        {/* Burger Menu (mobile) */}
         {isOpen && (
           <div className="lg:hidden absolute top-full left-0 right-0 bg-primary text-white">
             <ScrollLink

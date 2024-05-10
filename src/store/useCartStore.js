@@ -3,10 +3,10 @@ import {create} from 'zustand';
 const useCartStore = create((set) => ({
   cartItems: [],
   addToCart: (item) => set((state) => {
-    // Verificam daca itemul este deja in cart
+    // Verify if the item is in the cart already
     const itemExists = state.cartItems.some((cartItem) => cartItem.id === item.id);
     if (!itemExists) {
-      // Daca nu e itemul in cos, il adaugam la cart
+      // If the item is not in the cart, we add it to the cart
       return { cartItems: [...state.cartItems, item] };
     }
     return state;
