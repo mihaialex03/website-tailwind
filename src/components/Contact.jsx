@@ -13,6 +13,7 @@ export const Contact = () => {
   const [formData, setFormData] = useState({
     user_name: "",
     user_email: "",
+    phone_number: "",
     message: "",
   });
 
@@ -33,7 +34,7 @@ export const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
+  
     emailjs
       .sendForm(
         "service_7hsaddr",
@@ -47,8 +48,13 @@ export const Contact = () => {
           setShowNotification(true);
           setNotificationType("success");
           setNotificationMessage("Message has been sent");
-
-          form.current.reset();
+  
+          setFormData({
+            user_name: "",
+            user_email: "",
+            phone_number: "",
+            message: "",
+          });
         },
         (error) => {
           console.log("FAILED...", error.text);
@@ -58,13 +64,13 @@ export const Contact = () => {
         }
       );
   };
-
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevState) => ({
       ...prevState,
       [name]: value,
     }));
+    
   };
 
   useEffect(() => {
@@ -105,6 +111,19 @@ export const Contact = () => {
               className="w-full border border-primary rounded-md px-4 py-2"
               required
               pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            />
+          </div>
+          <div className="mb-4">
+            <label className="block mb-2 text-primary">Phone Number</label>
+            <input
+              type="tel"
+              name="phone_number"
+              value={formData.phone_number}
+              onChange={handleInputChange}
+              className="w-full border border-primary rounded-md px-4 py-2"
+              pattern="[0-9]{10}"
+              title="Please enter a 10-digit phone number"
+              required
             />
           </div>
           <div className="mb-4">
