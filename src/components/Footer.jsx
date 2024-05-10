@@ -23,20 +23,24 @@ const Footer = () => {
             url="https://www.instagram.com/"
             style={{ height: 30, width: 30 }}
             className="mr-4"
+            target="_blank"
           />
           <SocialIcon
             url="https://www.tiktok.com/"
             style={{ height: 30, width: 30 }}
             className="mr-4"
+            target="_blank"
           />
           <SocialIcon
             url="https://www.facebook.com/"
             style={{ height: 30, width: 30 }}
             className="mr-4"
+            target="_blank"
           />
           <SocialIcon
             url="https://www.youtube.com/"
             style={{ height: 30, width: 30 }}
+            target="_blank"
           />
         </div>
       </div>
