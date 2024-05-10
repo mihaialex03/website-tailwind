@@ -1,9 +1,11 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 
 export const Contact = () => {
   const form = useRef();
   const [showNotification, setShowNotification] = useState(false);
+  const [notificationMessage, setNotificationMessage] = useState('');
+  const [notificationType, setNotificationType] = useState('');
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -14,17 +16,29 @@ export const Contact = () => {
         (result) => {
           console.log('SUCCESS!', result.text);
           setShowNotification(true);
+          setNotificationType('success');
+          setNotificationMessage('Message has been sent');
 
-        //   notification timeout
-          setTimeout(() => {
-            setShowNotification(false);
-          }, 2000);
+          form.current.reset();
         },
         (error) => {
           console.log('FAILED...', error.text);
+          setShowNotification(true);
+          setNotificationType('error');
+          setNotificationMessage('Failed to send message');
         }
       );
   };
+
+  useEffect(() => {
+    if (showNotification) {
+      const timeoutId = setTimeout(() => {
+        setShowNotification(false);
+      }, 2000);
+
+      return () => clearTimeout(timeoutId);
+    }
+  }, [showNotification]);
 
   return (
     <section id="contact" className="py-16">
@@ -46,8 +60,8 @@ export const Contact = () => {
           <button type="submit" className="bg-primary text-background px-4 py-2 rounded-md hover:bg-accent mx-auto block">Send</button>
         </form>
         {showNotification && (
-          <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-primary text-background px-4 py-2 rounded">
-            Message has been sent
+          <div className={`fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-${notificationType === 'success' ? 'primary' : 'accent'} text-background px-4 py-2 rounded`}>
+            {notificationMessage}
           </div>
         )}
       </div>
