@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# Coaching App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+The Coaching App is a platform designed for personal trainers to showcase their services, provide information about themselves, offer programs for purchase, and allow clients to contact them directly.
 
-## Available Scripts
+## Features
+- **Trainer Profile:** Personal trainers can create profiles to showcase their expertise, qualifications, and experience.
+- **Programs:** Trainers can offer fitness programs and training packages for clients to purchase.
+- **Direct Contact:** Clients can easily get in touch with trainers through the app.
 
-In the project directory, you can run:
+## Dependencies
+- **@emailjs/browser**: Version 4.3.3
+- **@testing-library/jest-dom**: Version 5.17.0
+- **@testing-library/react**: Version 13.4.0
+- **@testing-library/user-event**: Version 13.5.0
+- **react**: Version 18.3.0
+- **react-dom**: Version 18.3.0
+- **react-router-dom**: Version 6.22.3
+- **react-scripts**: Version 5.0.1
+- **react-scroll**: Version 1.9.0
+- **react-social-icons**: Version 6.16.0
+- **web-vitals**: Version 2.1.4
+- **zustand**: Version 4.5.2
 
-### `npm start`
+## Installation
+1. Clone the repository: `git clone https://github.com/mihaialex03/website-tailwind.git>`
+2. Navigate to the project directory: `cd website-tailwind`
+3. Install dependencies: `npm install`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Usage
+1. Start the development server: `npm start`
+2. Open your browser and navigate to [http://localhost:3000](http://localhost:3000)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Configuration
+- To configure email functionality, set up the required environment variables for @emailjs/browser.
 
-### `npm test`
+## Contributing
+Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
+1. Fork the repository
+2. Create a new branch: `git checkout -b feature-name`
+3. Make your changes
+4. Commit your changes: `git commit -m 'Add new feature'`
+5. Push to the branch: `git push origin feature-name`
+6. Submit a pull request
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## License
+This project is licensed under the [MIT License](LICENSE).
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Contact
+If you have any questions or suggestions, feel free to contact me at [alexandrumihai.03@icloud.com](mailto:alexandrumihai.03@icloud.com).
