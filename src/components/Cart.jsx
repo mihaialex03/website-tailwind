@@ -1,5 +1,7 @@
 import React from "react";
 import useCartStore from "../store/useCartStore";
+import { Link as ScrollLink } from "react-scroll";
+
 
 const Cart = () => {
   // using useCartStore Hook
@@ -50,6 +52,14 @@ const Cart = () => {
               <p className="text-xl text-primary">
                 Number of items: {cartItems.length}
               </p>
+              <ScrollLink
+                to="contact"
+                smooth={true}
+                duration={500}
+                className="bg-primary  text-background py-2 px-4 rounded-lg mt-4 inline-block mx-auto"
+              >
+                Proceed to checkout
+              </ScrollLink>
             </div>
           </div>
         </section>
